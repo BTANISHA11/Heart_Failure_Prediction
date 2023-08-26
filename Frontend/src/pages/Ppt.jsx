@@ -7,7 +7,7 @@ export default function Ppt() {
       <Navbar />
       <div className="ppt">
         <iframe
-          src="https://www.slideshare.net/slideshow/embed_code/key/HusIn6BFM8yRjm?hostedIn=slideshare&page=upload"
+          src="https://www.slideshare.net/secret/32YUrCLs2bPeSd"
           width="1450"
           height="800"
           frameborder="0"
