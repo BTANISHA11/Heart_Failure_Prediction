@@ -5,25 +5,30 @@ import { BarChart, Bar, XAxis, YAxis, Tooltip, Legend } from "recharts";
 const HeartFailureAnalysis = () => {
   // Sample analysis data for heart failure prediction (replace with your actual data)
   const data = [
-    { category: "Age", positiveCases: 50, negativeCases: 100 },
-    { category: "Gender", positiveCases: 70, negativeCases: 80 },
-    { category: "Smoking Status", positiveCases: 30, negativeCases: 120 },
+    { category: "Age", survived: 50, notSurvived: 100 },
+    { category: "Gender", survived: 70, notSurvived: 80 },
+    { category: "SmokingStatus", survived: 30, notSurvived: 120 },
+    { category: "Diabetes", survived: 30, notSurvived: 120 },
+    { category: "Anameia", survived: 30, notSurvived: 120 },
+    { category: "HighBloodPressure", survived: 30, notSurvived: 120 },
     // Add more data...
   ];
 
   return (
-    <div>
+    <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
       <Navbar />
       <div className="analysis">
-        <h2>Heart Failure Prediction Analysis</h2>
-        <BarChart width={600} height={400} data={data}>
-          <XAxis dataKey="category" />
-          <YAxis />
-          <Tooltip />
-          <Legend />
-          <Bar dataKey="positiveCases" fill="#8884d8" name="Positive Cases" />
-          <Bar dataKey="negativeCases" fill="#82ca9d" name="Negative Cases" />
-        </BarChart>
+        <h2 style={{ textAlign: "center" }}>Heart Failure Prediction Analysis</h2>
+        <div style={{ textAlign: "center" }}>
+          <BarChart width={600} height={400} data={data}>
+            <XAxis dataKey="category" />
+            <YAxis />
+            <Tooltip />
+            <Legend />
+            <Bar dataKey="survived" fill="#8884d8" name="Survived" />
+            <Bar dataKey="notSurvived" fill="#82ca9d" name="NotSurvived" />
+          </BarChart>
+        </div>
       </div>
     </div>
   );
