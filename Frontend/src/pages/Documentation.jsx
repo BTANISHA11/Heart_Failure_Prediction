@@ -9,8 +9,9 @@ export default function Documentation() {
       <div className="doc">
         <iframe
           className="doc"
-          src="https://research-paper.tiiny.site/"
-          // src="ML\HEART FAILURE PREDICTION.ipynb"
+          // src="https://research-paper.tiiny.site/"
+          src="https://red-marline-69.tiiny.site"
+          // src="ML\HEART FAILURE PREDICTION.py"
           // src="HEART FAILURE PREDICTION.html"
           // src={driveLink}
           width="1700"

@@ -14,7 +14,7 @@ import ListItemIcon from "@mui/material/ListItemIcon";
 import HomeIcon from "@mui/icons-material/Home";
 import InfoIcon from "@mui/icons-material/Info";
 import CommentRoundedIcon from "@mui/icons-material/CommentRounded";
-import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded";
+// import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded";
 // import ShoppingCartRoundedIcon from "@mui/icons-material/ShoppingCartRounded";
 import { Link } from "react-router-dom";
 
@@ -38,7 +38,12 @@ const Navbar = () => {
     },
     {
       text: "PPT",
-      icon: <PhoneRoundedIcon />,
+      icon: <InfoIcon />,
+      direct:"/ppt"
+    },
+    {
+      text: "Analysis",
+      icon: <InfoIcon />,
       direct:"/ppt"
     },
   ];
@@ -52,6 +57,7 @@ const Navbar = () => {
         <Link to="/ml"> Model</Link>
         <Link to="/doc"> Documentation</Link>
         <Link to="/ppt"> PPT</Link>
+        <Link to="/analysis">Analysis</Link>
       </div>
       <div className="navbar-menu-container">
         <HiOutlineBars3 onClick={() => setOpenMenu(true)} />

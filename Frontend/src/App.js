@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import Ml from "./pages/Ml";
 import Documentation from "./pages/Documentation";
 import Ppt from "./pages/Ppt";
+import Analysis from "./pages/Analysis";
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
           <Route path="/ml" element={<Ml />} />
           <Route path="/doc" element={<Documentation />} />
           <Route path="/ppt" element={<Ppt />} />
+          <Route path="/analysis" element={<Analysis/>}/>
         </Routes>
       </BrowserRouter>
     </div>
