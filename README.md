@@ -30,3 +30,6 @@ About 400,000 adults die of heart failure (HF) in the United States every year. 
 ### Decision Tree
 ### XGBoost
 ### ANN Claasifier
+# Prediction Form
+![Screenshot (441)](https://github.com/BTANISHA11/Heart_Failure_Prediction/assets/110708865/f1d42293-5d05-430b-97c1-49b61a9112db)
+### This shows how the heart failure is predicted.
