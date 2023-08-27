@@ -116,46 +116,68 @@ input {
   max-height: 130px;
 }
 
-.navbar-menu-container {
-  display: none;
-}
-.navbar-links-container,
-a {
-  margin-right: 3rem;
-  text-decoration: none;
-  color: black;
-  font-size: 1.3rem;
-  font-weight: 600;
-}
+
+/* Styling for Navbar Links */
+.navbar-links-container a,
 .navbar-link {
-  margin-right: 3rem;
+  margin-right: 2rem;
   text-decoration: none;
-  color: black;
-  font-size: 1.1rem;
-  font-weight: 600;
+  color: #333;
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
 }
 
+.navbar-links-container a:hover,
+.navbar-link:hover {
+  color: #007bff;
+}
+
+/* Styling for Primary Button */
 .primary-button {
-  padding: 0.9rem 1.75rem;
-  background-color: white;
+  padding: 1rem 2rem;
+  background-color: #007bff;
+  color: white;
   outline: none;
   border: none;
   border-radius: 5rem;
   font-size: 1.1rem;
   cursor: pointer;
   font-weight: 600;
-  transition: 0.2s;
+  transition: background-color 0.2s, transform 0.2s;
 }
-.navbar-cart-icon {
-  font-size: 1.15rem;
-}
+
 .primary-button:hover {
-  background-color: rgb(234, 234, 234);
+  background-color: #0056b3;
+  transform: scale(1.05);
 }
+
+Styling for Navbar Cart Icon
+/* Styling for Navbar Cart Icon */
+.navbar-cart-icon {
+  font-size: 1.6rem;
+  color: #555;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-cart-icon:hover {
+  color: #007bff;
+}
+
+/* Styling for Navbar Menu Icon */
 .navbar-menu-container svg {
-  font-size: 1.5rem;
+  font-size: 2rem;
   cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  fill: #555;
 }
+
+.navbar-menu-container svg:hover {
+  transform: scale(1.2);
+  fill: #007bff;
+}
+
+
 .home-banner-container {
   position: relative;
   display: flex;
